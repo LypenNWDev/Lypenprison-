@@ -1,0 +1,37 @@
+# Lypen Prison Configuration
+
+# Ayarları buradan yapılandırabilirsiniz.
+# RGB renkler için hex kodları kullanabilirsiniz. Örnek: &#FF0000 (Kırmızı)
+
+# Oyuncuya adminin mesajı iletilmediğinde (veya admin girmediginde) default chat mesaji:
+no_admin_message: "&cSebep belirtilmedi."
+
+# Oyuncu çıkış yaparsa ban mesajı
+quit_ban_message: "&cKontrol sırasında oyundan çıktığınız için banlandınız!"
+
+# Admin oyundan çıkarsa veya banlanırsa hapisteki oyuncu cezasını çeker, süre biterse vs. durumu.
+# Cage yerleşimi için bir sonraki kafesin X koordinatı indexi (Sistem otomatik günceller)
+next_cage_index: 0
+
+prison_types:
+  kontrol:
+    # Ekrana verilecek mesajlar
+    title: "&#FF0000Kontrole Alındın"
+    subtitle: "&#FFAA00Oyundan Çıkman Durumunda Ban Yiyeceksin"
+    actionbar: "&#00FFFFKontrol: %time% Saniye Sonra Bitecek"
+    
+    # Kafes içindeki oyuncu ayarları
+    apply_blindness: false
+    can_take_damage: false
+    can_move: true
+    can_chat: false
+  
+  uyari:
+    title: "&#FF5555Uyarıldın"
+    subtitle: "&#FFAA00Kurallara uymadığın tespit edildi."
+    actionbar: "&#00FFFFUyarı Süresi: %time% Saniye"
+    
+    apply_blindness: false
+    can_take_damage: false
+    can_move: false
+    can_chat: false

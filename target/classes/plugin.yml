@@ -1,0 +1,21 @@
+name: LypenPrison
+version: '1.0-SNAPSHOT'
+main: com.lypen.prison.LypenPrison
+api-version: '1.20'
+author: Lypen
+description: A plugin to isolate suspected cheaters.
+
+commands:
+  prison:
+    description: Puts a player in prison.
+    usage: /prison <type> <player> <duration> [message]
+    permission: lypenprison.admin
+  unprison:
+    description: Removes a player from prison.
+    usage: /unprison <player>
+    permission: lypenprison.admin
+
+permissions:
+  lypenprison.admin:
+    description: Allows using prison commands.
+    default: op
