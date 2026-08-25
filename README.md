@@ -40,3 +40,5 @@ If you are using ViaVersion on older versions, ensure it is fully updated, as ou
 
 📄 License
 This project is made for LypenNW. All rights reserved by the original creators.
+
+Disclaimer: Approximately 70% of the development and coding process for this plugin was assisted by Artificial Intelligence.
